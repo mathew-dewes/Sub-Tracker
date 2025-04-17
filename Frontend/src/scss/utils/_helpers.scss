@@ -1,0 +1,9 @@
+@use './breakpoints' as f;
+
+.res-alignment{
+    text-align: center;
+    @include f.breakpoint(medium) {
+        text-align: left;
+     }
+
+}

@@ -1,0 +1,20 @@
+@use '../utils' as f;
+
+.subscription{
+margin-bottom: 60px;
+  &__card-display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+  
+    
+  }
+
+  h2{
+    text-align: center;
+  }
+}
+
+

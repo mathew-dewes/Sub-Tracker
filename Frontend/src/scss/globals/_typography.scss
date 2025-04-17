@@ -1,0 +1,32 @@
+@use '../utils' as f;
+
+p{
+    font-size: 14px;
+    font-weight: 300;
+    @include f.breakpoint(medium){
+ font-size: 16px;
+    }
+    @include f.breakpoint(large){
+ font-size: 18px;
+    }
+}
+
+h1{
+    font-size: 28px;
+    @include f.breakpoint(medium){
+        font-size: 32px;
+           }
+    @include f.breakpoint(large){
+        font-size: 40px;
+           }
+}
+
+
+
+a, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+    
+   
+}
+

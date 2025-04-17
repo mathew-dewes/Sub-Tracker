@@ -1,0 +1,84 @@
+@use '../utils' as f;
+
+.add-subscription{
+    margin-bottom: 40px;
+    
+    @include f.breakpoint(medium){
+        margin-bottom: 80px;
+           }
+
+    &__input{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__send-email{
+        display: flex;
+        gap: 10px;
+        margin: 10px 0;
+
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+
+      
+    }
+
+
+
+   
+
+    select{
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        
+    }
+
+    #startDate{
+        width: 120px;
+    }
+
+    #price{
+        width: 70px;
+    }
+
+    h2{
+        margin-bottom: 20px;
+    }
+
+    #read-terms{
+        color: var(--orange);
+        cursor: pointer;
+    }
+    #read-terms:hover{
+        font-weight: 500;
+    }
+
+    button{
+        margin-top: 20px;
+    }
+
+    &__terms {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        transform: translateY(-10px);
+        pointer-events: none;
+      
+        &.show {
+          max-height: 200px; // adjust based on actual content height
+          opacity: 1;
+          transform: translateY(0);
+          pointer-events: auto;
+        }
+      }
+
+
+}

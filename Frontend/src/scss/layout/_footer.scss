@@ -1,0 +1,40 @@
+@use '../utils' as f;
+
+.footer{
+  display: flex;
+  flex-direction: column;
+   background-color: var(--darkBlue);
+  padding: 0 10%;
+  min-height: 140px;
+
+
+
+  &__message{
+    margin: 20px 0;
+    max-width: 400px;
+  }
+
+  &__contact{
+    margin: 20px 0;
+  }
+
+}
+
+
+
+@include f.breakpoint(medium) {
+
+    .footer{
+        padding: 0 5%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &__message, &__contact{
+           margin: 0;
+          }
+        
+        
+    }
+   
+}

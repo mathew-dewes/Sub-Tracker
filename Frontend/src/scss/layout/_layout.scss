@@ -1,0 +1,17 @@
+@use '../utils' as f;
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 80vh;
+    margin: 0 10%;
+    margin-top: 10px;
+    @include f.breakpoint(medium){
+        margin: 0 5%;
+        margin-top: 80px;
+           }
+   
+}
+
+

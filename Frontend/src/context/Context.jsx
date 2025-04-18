@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const MyProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const serverUrl = 'http://localhost:5500';
+  const serverUrl = 'https://sub-tracker-backend.onrender.com';
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem('token'));
   const [token, setToken] = useState(localStorage.getItem('token'));
   const navigate = useNavigate();

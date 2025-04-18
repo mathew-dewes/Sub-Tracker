@@ -14,8 +14,8 @@ import workFlowRouter from './routes/workflow.routes.js';
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:5173',
-    credentials: true, // only if you're using cookies or auth headers
+    origin: 'https://sub-tracker-backend.onrender.com',
+    credentials: true,
   }));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -36,7 +36,6 @@ app.get('/',(req, res)=>{
 
 
 app.listen(PORT, async()=>{
-    console.log(`Subscription Tracker API is running on http://localhost:${PORT}`);
     await connectToDatabase();
     
 });

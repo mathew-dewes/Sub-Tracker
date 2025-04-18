@@ -85,6 +85,3 @@ try {
     next(error)
 }
 }
-// export const signOut = async (req, res, next)=>{
-
-// }

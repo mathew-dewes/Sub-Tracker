@@ -14,7 +14,7 @@ import workFlowRouter from './routes/workflow.routes.js';
 const app = express();
 
 app.use(cors({
-    origin: 'https://sub-tracker-backend.onrender.com',
+    origin: 'https://sub-tracker-qi1n.onrender.com',
     credentials: true,
   }));
 app.use(express.json());
